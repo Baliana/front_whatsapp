@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.BarraContatos {
+    width: 20%;
+    background-color: #075E54;
+}
+
+.conversa {
+    width: 80%;
+    background-color: #faf0e6;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+ 
+}
+#DigitarPesquisa{
+    width: 80%;
+    padding: 10px;
+    margin-left: 7%;
+    margin-top: 10%;
+    border-radius: 8px;
+}
+
+.enviar {
+    height: 10%;
+    background-color:rgba(211, 211, 211, 0.568);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+.DigiteMensagem {
+    width: 85%;
+    background-color: white;
+    height: 50%; 
+    margin-left: 10%;
+    border-radius: 8px;
+}
+.enviar img {
+    height: 24px; 
+    cursor: pointer;
+}
+
+.icone-audio{
+    margin-left: 90;
+}
+
