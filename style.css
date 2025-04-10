@@ -31,27 +31,37 @@ main {
 }
 
 .enviar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
     height: 10%;
-    background-color:rgba(211, 211, 211, 0.568);
+    background-color: rgba(211, 211, 211, 0.568);
     position: absolute;
     bottom: 0;
     width: 100%;
-   
+    gap: 10px;
 }
 
-.DigiteMensagem {
-    width: 85%;
-    background-color: white;
-    height: 50%; 
-    margin-left: 10%;
-    border-radius: 8px;
-}
-.enviar img {
-    height: 24px; 
+.icon {
+    height: 24px;
     cursor: pointer;
 }
 
-.icone-audio{
-    margin-left: 90;
+.DigiteMensagem {
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.DigiteMensagem input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
 }
 
