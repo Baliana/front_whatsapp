@@ -20,9 +20,10 @@ main {
     position: relative; 
     display: flex;
     flex-direction: column;
- 
+    padding-bottom: 10%;
 }
-#DigitarPesquisa{
+
+#DigitarPesquisa {
     width: 80%;
     padding: 10px;
     margin-left: 7%;
@@ -63,5 +64,66 @@ main {
     outline: none;
     font-size: 14px;
     background: transparent;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 10px;
+    margin-top: 10%;
+}
+
+p {
+    font-weight: bold;
+    color: white;
+}
+
+.line {
+    height: 2px;
+    background-color:white;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.trocaDeMensagem {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.mensagem {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    word-wrap: break-word;
+}
+
+.mensagem.enviada {
+    align-self: flex-end;
+    background-color: #719357;
+    border-bottom-right-radius: 0;
+}
+
+
+.mensagem.recebida {
+    align-self: flex-start;
+    background-color: rgb(210, 85, 85);
+    border-bottom-left-radius: 0;
+}
+
+.mensagem img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    opacity: 0.6;
 }
 

@@ -23,8 +23,8 @@ async function preencherConversas(contato) {
 
     mensagens.forEach(mensagem => {
         const msgDiv = document.createElement('div')
-        msgDiv.textContent = `${mensagem.sender} ${mensagem.content} (${mensagem.time})`
-        msgDiv.classList.add(mensagem.sender === "me" ? "mensagem-enviada" : "mensagem-recebida")
+        msgDiv.textContent = mensagem.content
+        msgDiv.classList.add('mensagem', mensagem.sender === "me" ? "enviada" : "recebida")
         chatBox.appendChild(msgDiv)
     })
 }
@@ -42,7 +42,7 @@ async function preencherContatos() {
         contatoDiv.addEventListener('click', () => preencherConversas(contato.name))
 
         const img = document.createElement('img')
-        img.src = './img/user.png' // Todos os contatos usarão essa imagem
+        img.src = './img/user.png'
         img.alt = contato.name
 
         const nome = document.createElement('span')
